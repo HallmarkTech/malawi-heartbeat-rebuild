@@ -9,9 +9,31 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SolutionsPrintingRouteImport } from './routes/solutions.printing'
+import { Route as SolutionsIndustrialRouteImport } from './routes/solutions.industrial'
+import { Route as SolutionsIctRouteImport } from './routes/solutions.ict'
+import { Route as SolutionsHealthcareRouteImport } from './routes/solutions.healthcare'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseStudiesRoute = CaseStudiesRouteImport.update({
+  id: '/case-studies',
+  path: '/case-studies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -22,35 +44,132 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SolutionsPrintingRoute = SolutionsPrintingRouteImport.update({
+  id: '/solutions/printing',
+  path: '/solutions/printing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolutionsIndustrialRoute = SolutionsIndustrialRouteImport.update({
+  id: '/solutions/industrial',
+  path: '/solutions/industrial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolutionsIctRoute = SolutionsIctRouteImport.update({
+  id: '/solutions/ict',
+  path: '/solutions/ict',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolutionsHealthcareRoute = SolutionsHealthcareRouteImport.update({
+  id: '/solutions/healthcare',
+  path: '/solutions/healthcare',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/contact': typeof ContactRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/solutions/healthcare': typeof SolutionsHealthcareRoute
+  '/solutions/ict': typeof SolutionsIctRoute
+  '/solutions/industrial': typeof SolutionsIndustrialRoute
+  '/solutions/printing': typeof SolutionsPrintingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/contact': typeof ContactRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/solutions/healthcare': typeof SolutionsHealthcareRoute
+  '/solutions/ict': typeof SolutionsIctRoute
+  '/solutions/industrial': typeof SolutionsIndustrialRoute
+  '/solutions/printing': typeof SolutionsPrintingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/contact': typeof ContactRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/solutions/healthcare': typeof SolutionsHealthcareRoute
+  '/solutions/ict': typeof SolutionsIctRoute
+  '/solutions/industrial': typeof SolutionsIndustrialRoute
+  '/solutions/printing': typeof SolutionsPrintingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/case-studies'
+    | '/contact'
+    | '/sitemap.xml'
+    | '/solutions/healthcare'
+    | '/solutions/ict'
+    | '/solutions/industrial'
+    | '/solutions/printing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about'
-  id: '__root__' | '/' | '/about'
+  to:
+    | '/'
+    | '/about'
+    | '/case-studies'
+    | '/contact'
+    | '/sitemap.xml'
+    | '/solutions/healthcare'
+    | '/solutions/ict'
+    | '/solutions/industrial'
+    | '/solutions/printing'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/case-studies'
+    | '/contact'
+    | '/sitemap.xml'
+    | '/solutions/healthcare'
+    | '/solutions/ict'
+    | '/solutions/industrial'
+    | '/solutions/printing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  CaseStudiesRoute: typeof CaseStudiesRoute
+  ContactRoute: typeof ContactRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  SolutionsHealthcareRoute: typeof SolutionsHealthcareRoute
+  SolutionsIctRoute: typeof SolutionsIctRoute
+  SolutionsIndustrialRoute: typeof SolutionsIndustrialRoute
+  SolutionsPrintingRoute: typeof SolutionsPrintingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case-studies': {
+      id: '/case-studies'
+      path: '/case-studies'
+      fullPath: '/case-studies'
+      preLoaderRoute: typeof CaseStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -65,12 +184,47 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/solutions/printing': {
+      id: '/solutions/printing'
+      path: '/solutions/printing'
+      fullPath: '/solutions/printing'
+      preLoaderRoute: typeof SolutionsPrintingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solutions/industrial': {
+      id: '/solutions/industrial'
+      path: '/solutions/industrial'
+      fullPath: '/solutions/industrial'
+      preLoaderRoute: typeof SolutionsIndustrialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solutions/ict': {
+      id: '/solutions/ict'
+      path: '/solutions/ict'
+      fullPath: '/solutions/ict'
+      preLoaderRoute: typeof SolutionsIctRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solutions/healthcare': {
+      id: '/solutions/healthcare'
+      path: '/solutions/healthcare'
+      fullPath: '/solutions/healthcare'
+      preLoaderRoute: typeof SolutionsHealthcareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  CaseStudiesRoute: CaseStudiesRoute,
+  ContactRoute: ContactRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SolutionsHealthcareRoute: SolutionsHealthcareRoute,
+  SolutionsIctRoute: SolutionsIctRoute,
+  SolutionsIndustrialRoute: SolutionsIndustrialRoute,
+  SolutionsPrintingRoute: SolutionsPrintingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
