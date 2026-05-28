@@ -22,3 +22,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://hallmark.mw/sitemap.xml
+Host: hallmark.mw
