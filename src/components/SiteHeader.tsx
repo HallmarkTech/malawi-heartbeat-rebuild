@@ -22,7 +22,7 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-3">
           <img src="/logo.png" alt="Hallmark Limited" width={40} height={40} className="h-10 w-auto" />
           <span className="leading-tight hidden sm:block">
-            <span className="block font-display text-base font-bold text-foreground">Hallmark Limited</span>
+            <span className="block font-display text-base font-bold text-foreground"></span>
             <span className="block text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">The Only Way</span>
           </span>
         </Link>
