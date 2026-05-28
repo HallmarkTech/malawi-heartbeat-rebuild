@@ -20,11 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Hallmark Limited" width={40} height={40} className="h-10 w-auto" />
-          <span className="leading-tight hidden sm:block">
-            <span className="block font-display text-base font-bold text-foreground"></span>
-            <span className="block text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">The Only Way</span>
-          </span>
+          <img src="/logo.png" width={40} height={40} className="h-10 w-auto" />
         </Link>
         <nav className="hidden lg:flex items-center gap-1">
           {nav.map((n) => (
