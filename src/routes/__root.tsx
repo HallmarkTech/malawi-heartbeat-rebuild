@@ -67,8 +67,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "ICBM", content: "-13.9626, 33.7741" },
       { name: "twitter:title", content: "Hallmark Limited — ICT, Industrial, Healthcare & Printing | Malawi & Zambia" },
       { name: "twitter:description", content: "Hallmark Limited is an African technology and engineering company delivering ICT, Industrial, Healthcare and Commercial Printing solutions across Malawi, Zambia and international markets. The Only Way." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eb664f78-39f2-45dc-b33e-381b84d222c5/id-preview-486fde21--591b7d8a-ae64-47ed-853b-c1d013f94878.lovable.app-1779893205611.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/eb664f78-39f2-45dc-b33e-381b84d222c5/id-preview-486fde21--591b7d8a-ae64-47ed-853b-c1d013f94878.lovable.app-1779893205611.png" },
+      { property: "og:image", content: "https://hallmark.mw/logo.png" },
+      { name: "twitter:image", content: "https://hallmark.mw/logo.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
