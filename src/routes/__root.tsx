@@ -11,7 +11,7 @@ import {
 import appCss from "../styles.css?url";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
-import { orgJsonLd } from "../lib/seo";
+import { orgJsonLd, websiteJsonLd, localBusinessesJsonLd } from "../lib/seo";
 
 function NotFoundComponent() {
   return (
