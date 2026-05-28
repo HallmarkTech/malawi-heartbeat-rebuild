@@ -6,6 +6,8 @@ import healthcare from "@/assets/sol-healthcare.jpg";
 import printing from "@/assets/sol-printing.jpg";
 import malawi from "@/assets/malawi-context.jpg";
 import { faqJsonLd } from "@/lib/seo";
+import { ClientLogos } from "@/components/ClientLogos";
+import { posts } from "@/lib/posts";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -192,7 +194,32 @@ function Index() {
         </div>
       </section>
 
-      {/* MALAWI STORY */}
+      <ClientLogos />
+
+      {/* INSIGHTS TEASER */}
+      <section className="container-x py-24">
+        <div className="flex items-end justify-between gap-6 mb-10">
+          <div>
+            <div className="eyebrow">Latest insights</div>
+            <h2 className="mt-2 font-display text-4xl md:text-5xl font-bold">Field notes from <span className="underline-accent">our teams</span>.</h2>
+          </div>
+          <Link to="/blog" className="btn-ghost hidden md:inline-flex">All insights →</Link>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {posts.slice(0, 3).map((p) => (
+            <Link key={p.slug} to="/blog/$slug" params={{ slug: p.slug }} className="group">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden ring-1 ring-border">
+                <img src={p.cover} alt={p.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" width={1600} height={1100}/>
+              </div>
+              <div className="mt-4 text-[11px] uppercase tracking-[0.18em] text-primary font-bold">{p.category}</div>
+              <h3 className="mt-2 font-display text-xl font-bold group-hover:text-primary transition-colors">{p.title}</h3>
+              <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{p.excerpt}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+
       <section className="relative overflow-hidden">
         <img src={malawi} alt="Lilongwe, Malawi at golden hour" className="absolute inset-0 w-full h-full object-cover -z-10" loading="lazy" width={1920} height={900}/>
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[color:var(--primary-deep)]/90 to-[color:var(--primary-deep)]/40" />

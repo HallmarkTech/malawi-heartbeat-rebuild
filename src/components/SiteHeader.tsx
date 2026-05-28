@@ -4,11 +4,13 @@ import { useState } from "react";
 const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
+  { to: "/industries", label: "Industries" },
   { to: "/solutions/ict", label: "ICT" },
   { to: "/solutions/industrial", label: "Industrial" },
   { to: "/solutions/healthcare", label: "Healthcare" },
-  { to: "/solutions/printing", label: "Printing & Branding" },
+  { to: "/solutions/printing", label: "Printing" },
   { to: "/case-studies", label: "Case Studies" },
+  { to: "/blog", label: "Insights" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -17,10 +19,10 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground font-bold">H</span>
-          <span className="leading-tight">
-            <span className="block font-display text-base font-bold text-foreground">Hallmark</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img src="/logo.png" alt="Hallmark Limited" width={40} height={40} className="h-10 w-auto" />
+          <span className="leading-tight hidden sm:block">
+            <span className="block font-display text-base font-bold text-foreground">Hallmark Limited</span>
             <span className="block text-[10px] font-semibold uppercase tracking-[0.22em] text-primary">The Only Way</span>
           </span>
         </Link>

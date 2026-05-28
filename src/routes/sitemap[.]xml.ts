@@ -6,11 +6,16 @@ const BASE_URL = "https://hallmark.mw";
 const entries = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/about", changefreq: "monthly", priority: "0.8" },
+  { path: "/industries", changefreq: "monthly", priority: "0.9" },
   { path: "/solutions/ict", changefreq: "monthly", priority: "0.9" },
   { path: "/solutions/industrial", changefreq: "monthly", priority: "0.9" },
   { path: "/solutions/healthcare", changefreq: "monthly", priority: "0.9" },
   { path: "/solutions/printing", changefreq: "monthly", priority: "0.9" },
   { path: "/case-studies", changefreq: "monthly", priority: "0.7" },
+  { path: "/blog", changefreq: "weekly", priority: "0.8" },
+  { path: "/blog/solar-epc-malawi-2026", changefreq: "yearly", priority: "0.6" },
+  { path: "/blog/smart-water-metering-lusaka", changefreq: "yearly", priority: "0.6" },
+  { path: "/blog/biomedical-engineering-rural-clinics", changefreq: "yearly", priority: "0.6" },
   { path: "/contact", changefreq: "yearly", priority: "0.6" },
 ];
 
