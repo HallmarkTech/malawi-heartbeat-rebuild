@@ -11,7 +11,7 @@ import {
 import appCss from "../styles.css?url";
 import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
-import { orgJsonLd } from "../lib/seo";
+import { orgJsonLd, websiteJsonLd, localBusinessesJsonLd } from "../lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -77,10 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
     ],
     scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(orgJsonLd()),
-      },
+      { type: "application/ld+json", children: JSON.stringify(orgJsonLd()) },
+      { type: "application/ld+json", children: JSON.stringify(websiteJsonLd()) },
+      { type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@graph": localBusinessesJsonLd() }) },
     ],
   }),
   shellComponent: RootShell,
