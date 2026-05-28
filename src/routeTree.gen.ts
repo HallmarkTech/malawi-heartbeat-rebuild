@@ -10,18 +10,26 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as IndustriesRouteImport } from './routes/industries'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SolutionsPrintingRouteImport } from './routes/solutions.printing'
 import { Route as SolutionsIndustrialRouteImport } from './routes/solutions.industrial'
 import { Route as SolutionsIctRouteImport } from './routes/solutions.ict'
 import { Route as SolutionsHealthcareRouteImport } from './routes/solutions.healthcare'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndustriesRoute = IndustriesRouteImport.update({
+  id: '/industries',
+  path: '/industries',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -32,6 +40,11 @@ const ContactRoute = ContactRouteImport.update({
 const CaseStudiesRoute = CaseStudiesRouteImport.update({
   id: '/case-studies',
   path: '/case-studies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -64,13 +77,21 @@ const SolutionsHealthcareRoute = SolutionsHealthcareRouteImport.update({
   path: '/solutions/healthcare',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/blog': typeof BlogRouteWithChildren
   '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
+  '/industries': typeof IndustriesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/solutions/healthcare': typeof SolutionsHealthcareRoute
   '/solutions/ict': typeof SolutionsIctRoute
   '/solutions/industrial': typeof SolutionsIndustrialRoute
@@ -79,9 +100,12 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/blog': typeof BlogRouteWithChildren
   '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
+  '/industries': typeof IndustriesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/solutions/healthcare': typeof SolutionsHealthcareRoute
   '/solutions/ict': typeof SolutionsIctRoute
   '/solutions/industrial': typeof SolutionsIndustrialRoute
@@ -91,9 +115,12 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/blog': typeof BlogRouteWithChildren
   '/case-studies': typeof CaseStudiesRoute
   '/contact': typeof ContactRoute
+  '/industries': typeof IndustriesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/solutions/healthcare': typeof SolutionsHealthcareRoute
   '/solutions/ict': typeof SolutionsIctRoute
   '/solutions/industrial': typeof SolutionsIndustrialRoute
@@ -104,9 +131,12 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/blog'
     | '/case-studies'
     | '/contact'
+    | '/industries'
     | '/sitemap.xml'
+    | '/blog/$slug'
     | '/solutions/healthcare'
     | '/solutions/ict'
     | '/solutions/industrial'
@@ -115,9 +145,12 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/blog'
     | '/case-studies'
     | '/contact'
+    | '/industries'
     | '/sitemap.xml'
+    | '/blog/$slug'
     | '/solutions/healthcare'
     | '/solutions/ict'
     | '/solutions/industrial'
@@ -126,9 +159,12 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/blog'
     | '/case-studies'
     | '/contact'
+    | '/industries'
     | '/sitemap.xml'
+    | '/blog/$slug'
     | '/solutions/healthcare'
     | '/solutions/ict'
     | '/solutions/industrial'
@@ -138,8 +174,10 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BlogRoute: typeof BlogRouteWithChildren
   CaseStudiesRoute: typeof CaseStudiesRoute
   ContactRoute: typeof ContactRoute
+  IndustriesRoute: typeof IndustriesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SolutionsHealthcareRoute: typeof SolutionsHealthcareRoute
   SolutionsIctRoute: typeof SolutionsIctRoute
@@ -156,6 +194,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/industries': {
+      id: '/industries'
+      path: '/industries'
+      fullPath: '/industries'
+      preLoaderRoute: typeof IndustriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -168,6 +213,13 @@ declare module '@tanstack/react-router' {
       path: '/case-studies'
       fullPath: '/case-studies'
       preLoaderRoute: typeof CaseStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -212,14 +264,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SolutionsHealthcareRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof BlogRoute
+    }
   }
 }
+
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
+  BlogSlugRoute: BlogSlugRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BlogRoute: BlogRouteWithChildren,
   CaseStudiesRoute: CaseStudiesRoute,
   ContactRoute: ContactRoute,
+  IndustriesRoute: IndustriesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   SolutionsHealthcareRoute: SolutionsHealthcareRoute,
   SolutionsIctRoute: SolutionsIctRoute,
@@ -229,3 +300,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
