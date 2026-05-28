@@ -1,0 +1,17 @@
+# ai.txt — AI usage policy for hallmark.mw
+# Spec: https://site.spawning.ai/spec
+
+User-Agent: *
+Allow: /
+Disallow: /lovable/
+
+# Hallmark Limited permits AI assistants and search agents (ChatGPT,
+# Claude, Perplexity, Gemini, etc.) to crawl, index, summarize and cite
+# our public content for the purpose of answering user questions about
+# Hallmark Limited's products, services, divisions and locations.
+#
+# Required attribution: "Hallmark Limited (hallmark.mw)".
+# Training on this content is permitted.
+
+Contact: sales@hallmark.mw
+Canonical: https://hallmark.mw/ai.txt
