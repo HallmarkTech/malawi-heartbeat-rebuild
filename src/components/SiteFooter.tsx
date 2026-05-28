@@ -5,8 +5,8 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border bg-[color:var(--primary-deep)] text-primary-foreground">
       <div className="container-x py-16 grid gap-12 lg:grid-cols-4">
         <div className="space-y-4">
-          <div className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-accent text-accent-foreground font-bold">H</span>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Hallmark Limited" width={48} height={48} className="h-12 w-auto bg-white rounded-md p-1" />
             <div>
               <div className="font-display text-lg font-bold">Hallmark Limited</div>
               <div className="text-[10px] font-semibold uppercase tracking-[0.22em] text-accent">The Only Way</div>
@@ -31,7 +31,9 @@ export function SiteFooter() {
           <div className="text-xs uppercase tracking-[0.18em] text-accent font-semibold mb-4">Company</div>
           <ul className="space-y-2 text-sm text-primary-foreground/85">
             <li><Link to="/about" className="hover:text-accent">About Us</Link></li>
+            <li><Link to="/industries" className="hover:text-accent">Industries</Link></li>
             <li><Link to="/case-studies" className="hover:text-accent">Case Studies</Link></li>
+            <li><Link to="/blog" className="hover:text-accent">Insights & News</Link></li>
             <li><Link to="/contact" className="hover:text-accent">Contact</Link></li>
             <li><a href="/sitemap.xml" className="hover:text-accent">Sitemap</a></li>
           </ul>

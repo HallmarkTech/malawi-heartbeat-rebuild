@@ -88,7 +88,7 @@ function PostPage() {
       </div>
 
       <div className="container-x py-14 max-w-3xl space-y-6 text-lg leading-relaxed">
-        {post.body.map((p, i) => (
+        {post.body.map((p: string, i: number) => (
           <p key={i}>{p}</p>
         ))}
       </div>
