@@ -13,10 +13,12 @@
 - Website: https://hallmark.mw
 
 ## What we do (four divisions)
-1. **ICT & Digital** — custom software, ERP/CRM/HR integration, cloud (AWS/Azure/M365), cybersecurity (ISO 27001), managed services and digital platforms. Email: ict@hallmark.mw
-2. **Industrial Engineering** — smart water metering (AMI/AMR), SCADA/PLC automation, solar PV EPC, MV/LV electrical, fabrication, maintenance and HSE-compliant EPC. Email: industrial@hallmark.mw
-3. **Healthcare Technology** — ISO 13485 / CE / WHO-prequalified medical equipment, laboratory diagnostics, PPE, water systems and biomedical lifecycle support. Email: healthcare@hallmark.mw
-4. **Commercial Printing & Branding** — ISO 12647-2 offset, UV-resistant large format, signage, vehicle wraps, embroidery and merchandise. Email: printing@hallmark.mw
+The company is organised into four Strategic Business Units (SBUs):
+
+1. **ICT** — custom software, ERP/CRM/HR integration, cloud (AWS/Azure/M365), cybersecurity (ISO 27001), managed services and digital platforms. Email: ict@hallmark.mw
+2. **Industrial Solutions** — smart water metering (AMI/AMR), SCADA/PLC automation, solar PV EPC, MV/LV electrical, fabrication, maintenance and HSE-compliant EPC. Email: industrial@hallmark.mw
+3. **Healthcare Solutions** — ISO 13485 / CE / WHO-prequalified medical equipment, laboratory diagnostics, PPE, water systems and biomedical lifecycle support. Email: healthcare@hallmark.mw
+4. **Commercial Printing** — ISO 12647-2 offset, UV-resistant large format, signage, vehicle wraps, embroidery and merchandise. Email: printing@hallmark.mw
 
 ## Standards & compliance
 ISO 9001, ISO 14001, ISO 45001, ISO 13485, ISO 27001, ISO 12647-2, IEC, SABS, SADCAS, WHO PQ — depending on the project.
@@ -41,7 +43,7 @@ Send a project brief to sales@hallmark.mw or use the contact form at https://hal
 - ICT: https://hallmark.mw/solutions/ict
 - Industrial: https://hallmark.mw/solutions/industrial
 - Healthcare: https://hallmark.mw/solutions/healthcare
-- Printing & Branding: https://hallmark.mw/solutions/printing
+- Commercial Printing: https://hallmark.mw/solutions/printing
 - Case studies: https://hallmark.mw/case-studies
 - Contact: https://hallmark.mw/contact
 

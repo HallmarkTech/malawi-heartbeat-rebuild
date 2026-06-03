@@ -16,10 +16,10 @@ export const Route = createFileRoute("/solutions/ict")({
     ],
     links: [{ rel: "canonical", href: "/solutions/ict" }],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "ICT & Digital Solutions", description: "Custom software, cloud, cybersecurity and managed IT services.", url: "https://hallmark.mw/solutions/ict", serviceType: "Information Technology Services" })) },
+      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "ICT", description: "Custom software, cloud, cybersecurity and managed IT services.", url: "https://hallmark.mw/solutions/ict", serviceType: "Information Technology Services" })) },
       { type: "application/ld+json", children: JSON.stringify(breadcrumbsJsonLd([
         { name: "Home", url: "https://hallmark.mw/" },
-        { name: "Solutions", url: "https://hallmark.mw/" },
+        { name: "Business Units", url: "https://hallmark.mw/" },
         { name: "ICT", url: "https://hallmark.mw/solutions/ict" },
       ])) },
       { type: "application/ld+json", children: JSON.stringify(faqJsonLd([
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/solutions/ict")({
   }),
   component: () => (
     <SolutionPage
-      eyebrow="ICT & Digital · Hallmark"
+      eyebrow="ICT · Hallmark SBU"
       title="Innovating your digital future."
       intro="We design, build and support secure, scalable digital infrastructure and software for organizations across Africa and international markets — from SMEs to ministries, NGOs and donor-funded programs."
       email="ict@hallmark.mw"

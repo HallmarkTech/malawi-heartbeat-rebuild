@@ -6,20 +6,21 @@ import { breadcrumbsJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
 export const Route = createFileRoute("/solutions/printing")({
   head: () => ({
     meta: [
-      { title: "Commercial Printing & Branding Malawi — Offset, Large Format, Signage | Hallmark" },
+      { title: "Commercial Printing Malawi — Offset, Large Format, Signage | Hallmark" },
       { name: "description", content: "ISO 12647-2 colour-managed offset, UV-resistant large format, signage, vehicle wraps, embroidery and merchandise — multi-country brand rollouts from Malawi to the world." },
       { name: "keywords", content: "commercial printing Malawi, offset printing Blantyre, large format Lilongwe, signage Lusaka, vehicle wraps Africa, embroidery merchandise Malawi, Pantone color matching" },
-      { property: "og:title", content: "Hallmark Printing & Branding — Precision. Impact. Quality." },
+      { property: "og:title", content: "Hallmark Commercial Printing — Precision. Impact. Quality." },
       { property: "og:description", content: "From 50 flyers to 50,000 branded assets, color-accurate and built for tropical climates." },
       { property: "og:url", content: "/solutions/printing" },
       { property: "og:image", content: "/og-printing.jpg" },
     ],
     links: [{ rel: "canonical", href: "/solutions/printing" }],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "Commercial Printing & Branding", description: "Offset, digital large format, signage, apparel and merchandise.", url: "https://hallmark.mw/solutions/printing", serviceType: "Commercial Printing" })) },
+      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "Commercial Printing", description: "Offset, digital large format, signage, apparel and merchandise.", url: "https://hallmark.mw/solutions/printing", serviceType: "Commercial Printing" })) },
       { type: "application/ld+json", children: JSON.stringify(breadcrumbsJsonLd([
         { name: "Home", url: "https://hallmark.mw/" },
-        { name: "Printing & Branding", url: "https://hallmark.mw/solutions/printing" },
+        { name: "Business Units", url: "https://hallmark.mw/" },
+        { name: "Commercial Printing", url: "https://hallmark.mw/solutions/printing" },
       ])) },
       { type: "application/ld+json", children: JSON.stringify(faqJsonLd([
         { q: "What's your typical turnaround?", a: "Large format prints typically ship in 48–72 hours. Offset runs typically complete in 5–7 working days." },
@@ -30,7 +31,7 @@ export const Route = createFileRoute("/solutions/printing")({
   }),
   component: () => (
     <SolutionPage
-      eyebrow="Printing & Branding · Hallmark"
+      eyebrow="Commercial Printing · Hallmark SBU"
       title="Precision. Impact. Quality."
       intro="From concept and design through pre-press, production, finishing, fulfillment and installation — we deliver high-impact visual communication that lets brands communicate consistently and professionally at scale."
       email="printing@hallmark.mw"

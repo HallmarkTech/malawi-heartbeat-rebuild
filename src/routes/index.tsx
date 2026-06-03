@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify(faqJsonLd([
-        { q: "What does Hallmark Limited do?", a: "Hallmark Limited is a Malawi-headquartered company delivering integrated ICT, Industrial Engineering, Healthcare technology and Commercial Printing & Branding solutions across Malawi, Zambia and international markets." },
+        { q: "What does Hallmark Limited do?", a: "Hallmark Limited is a Malawi-headquartered company delivering integrated ICT, Industrial Solutions, Healthcare Solutions and Commercial Printing across Malawi, Zambia and international markets — organised into four Strategic Business Units (SBUs)." },
         { q: "Where is Hallmark Limited based?", a: "Our head office is in Lilongwe, Malawi (Area 47, Sector 1, Nzinziri Street) with regional offices in Blantyre, Mzuzu and Lusaka, Zambia." },
         { q: "Which standards do you work to?", a: "We deliver to ISO 9001, ISO 14001, ISO 45001, ISO 13485, ISO 27001, IEC, SABS and WHO standards depending on the project, with full QA/QC documentation." },
         { q: "Do you serve donor-funded and DFI projects?", a: "Yes. We routinely deliver projects for UNDP, UNICEF, USAID implementing partners, the Global Fund, World Bank-funded programs and ministries across Malawi and Zambia." },
@@ -34,10 +34,10 @@ export const Route = createFileRoute("/")({
 });
 
 const divisions = [
-  { to: "/solutions/ict", title: "ICT & Digital", img: ict, copy: "Custom software, cloud, cybersecurity and managed services engineered for African operating environments." , tag: "01"},
-  { to: "/solutions/industrial", title: "Industrial Engineering", img: industrial, copy: "Smart water, solar, automation and EPC delivery for utilities, mining and manufacturing.", tag: "02" },
-  { to: "/solutions/healthcare", title: "Healthcare Technology", img: healthcare, copy: "Medical equipment, lab diagnostics and biomedical lifecycle support for hospitals & NGOs.", tag: "03" },
-  { to: "/solutions/printing", title: "Printing & Branding", img: printing, copy: "Offset, large-format, signage and merchandise — precision color, durable for tropical climates.", tag: "04" },
+  { to: "/solutions/ict", title: "ICT", img: ict, copy: "Custom software, cloud, cybersecurity and managed services engineered for African operating environments." , tag: "01"},
+  { to: "/solutions/industrial", title: "Industrial Solutions", img: industrial, copy: "Smart water, solar, automation and EPC delivery for utilities, mining and manufacturing.", tag: "02" },
+  { to: "/solutions/healthcare", title: "Healthcare Solutions", img: healthcare, copy: "Medical equipment, lab diagnostics and biomedical lifecycle support for hospitals & NGOs.", tag: "03" },
+  { to: "/solutions/printing", title: "Commercial Printing", img: printing, copy: "Offset, large-format, signage and merchandise — precision color, durable for tropical climates.", tag: "04" },
 ] as const;
 
 function Index() {
@@ -118,8 +118,8 @@ function Index() {
       <section className="container-x py-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-2xl">
-            <div className="eyebrow">Four divisions, one accountable partner</div>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Solutions designed <span className="underline-accent">around you</span>.</h2>
+            <div className="eyebrow">Four SBUs, one accountable partner</div>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold">Strategic Business Units designed <span className="underline-accent">around you</span>.</h2>
           </div>
           <p className="text-muted-foreground max-w-md">
             We diagnose the problem, engineer the right solution, and execute with precision — backed by structured training and SLA-backed lifecycle support.

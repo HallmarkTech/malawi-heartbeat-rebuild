@@ -16,10 +16,11 @@ export const Route = createFileRoute("/solutions/industrial")({
     ],
     links: [{ rel: "canonical", href: "/solutions/industrial" }],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "Industrial Engineering & EPC", description: "Smart water metering, solar PV, automation, MV/LV electrical and fabrication.", url: "https://hallmark.mw/solutions/industrial", serviceType: "Industrial Engineering" })) },
+      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "Industrial Solutions", description: "Smart water metering, solar PV, automation, MV/LV electrical and fabrication.", url: "https://hallmark.mw/solutions/industrial", serviceType: "Industrial Engineering" })) },
       { type: "application/ld+json", children: JSON.stringify(breadcrumbsJsonLd([
         { name: "Home", url: "https://hallmark.mw/" },
-        { name: "Industrial", url: "https://hallmark.mw/solutions/industrial" },
+        { name: "Business Units", url: "https://hallmark.mw/" },
+        { name: "Industrial Solutions", url: "https://hallmark.mw/solutions/industrial" },
       ])) },
       { type: "application/ld+json", children: JSON.stringify(faqJsonLd([
         { q: "Do you supply and install smart water meters in Africa?", a: "Yes. We supply and install AMI/AMR smart water meters, bulk meters and remote level sensors. Our utility pilots have achieved 15–40% NRW reductions, with integration into existing billing, GIS and SCADA platforms." },
@@ -30,7 +31,7 @@ export const Route = createFileRoute("/solutions/industrial")({
   }),
   component: () => (
     <SolutionPage
-      eyebrow="Industrial Engineering · Hallmark"
+      eyebrow="Industrial Solutions · Hallmark SBU"
       title="Engineered for performance and safety."
       intro="We deliver engineering, maintenance and infrastructure solutions that keep industrial, utility and commercial operations running safely, efficiently and in compliance with international standards across Malawi and Zambia."
       email="industrial@hallmark.mw"

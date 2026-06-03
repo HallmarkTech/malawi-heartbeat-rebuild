@@ -16,10 +16,11 @@ export const Route = createFileRoute("/solutions/healthcare")({
     ],
     links: [{ rel: "canonical", href: "/solutions/healthcare" }],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "Healthcare Technology & Supplies", description: "Medical equipment, lab diagnostics, PPE, water systems and biomedical lifecycle support.", url: "https://hallmark.mw/solutions/healthcare", serviceType: "Medical Equipment Supply & Service" })) },
+      { type: "application/ld+json", children: JSON.stringify(serviceJsonLd({ name: "Healthcare Solutions", description: "Medical equipment, lab diagnostics, PPE, water systems and biomedical lifecycle support.", url: "https://hallmark.mw/solutions/healthcare", serviceType: "Medical Equipment Supply & Service" })) },
       { type: "application/ld+json", children: JSON.stringify(breadcrumbsJsonLd([
         { name: "Home", url: "https://hallmark.mw/" },
-        { name: "Healthcare", url: "https://hallmark.mw/solutions/healthcare" },
+        { name: "Business Units", url: "https://hallmark.mw/" },
+        { name: "Healthcare Solutions", url: "https://hallmark.mw/solutions/healthcare" },
       ])) },
       { type: "application/ld+json", children: JSON.stringify(faqJsonLd([
         { q: "Are your medical products certified?", a: "Yes. We source from ISO 13485, CE-marked, FDA-approved and WHO-prequalified manufacturers, with full Certificates of Conformity, traceability and documentation suitable for donor audits." },
@@ -30,7 +31,7 @@ export const Route = createFileRoute("/solutions/healthcare")({
   }),
   component: () => (
     <SolutionPage
-      eyebrow="Healthcare · Hallmark"
+      eyebrow="Healthcare Solutions · Hallmark SBU"
       title="Innovative solutions for a healthier future."
       intro="We supply, install and support medical equipment, laboratory solutions and healthcare facility systems that enable hospitals, clinics and labs across Sub-Saharan Africa to deliver safe, effective and compliant care."
       email="healthcare@hallmark.mw"
