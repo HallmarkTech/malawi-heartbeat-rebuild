@@ -52,10 +52,10 @@ export function orgJsonLd() {
       { "@type": "ContactPoint", telephone: "+265-992-563-010", contactType: "customer support", email: "support@hallmark.mw", areaServed: ["MW", "ZM"], availableLanguage: ["English", "Chichewa"] },
     ],
     department: [
-      { "@type": "Organization", name: "Hallmark ICT", email: "ict@hallmark.mw", url: "https://hallmark.mw/solutions/ict" },
-      { "@type": "Organization", name: "Hallmark Industrial", email: "industrial@hallmark.mw", url: "https://hallmark.mw/solutions/industrial" },
-      { "@type": "Organization", name: "Hallmark Healthcare", email: "healthcare@hallmark.mw", url: "https://hallmark.mw/solutions/healthcare" },
-      { "@type": "Organization", name: "Hallmark Printing & Branding", email: "printing@hallmark.mw", url: "https://hallmark.mw/solutions/printing" },
+      { "@type": "Organization", name: "Hallmark ICT (SBU)", email: "ict@hallmark.mw", url: "https://hallmark.mw/solutions/ict" },
+      { "@type": "Organization", name: "Hallmark Industrial Solutions (SBU)", email: "industrial@hallmark.mw", url: "https://hallmark.mw/solutions/industrial" },
+      { "@type": "Organization", name: "Hallmark Healthcare Solutions (SBU)", email: "healthcare@hallmark.mw", url: "https://hallmark.mw/solutions/healthcare" },
+      { "@type": "Organization", name: "Hallmark Commercial Printing (SBU)", email: "printing@hallmark.mw", url: "https://hallmark.mw/solutions/printing" },
     ],
     hasCredential: [
       "ISO 9001", "ISO 14001", "ISO 45001", "ISO 13485", "ISO 27001", "ISO 12647-2",

@@ -74,9 +74,9 @@ const offices = [
 const departments = [
   ["General Sales", "sales@hallmark.mw"],
   ["ICT", "ict@hallmark.mw"],
-  ["Industrial", "industrial@hallmark.mw"],
-  ["Healthcare", "healthcare@hallmark.mw"],
-  ["Printing & Branding", "printing@hallmark.mw"],
+  ["Industrial Solutions", "industrial@hallmark.mw"],
+  ["Healthcare Solutions", "healthcare@hallmark.mw"],
+  ["Commercial Printing", "printing@hallmark.mw"],
 ] as const;
 
 function ContactPage() {
@@ -119,12 +119,12 @@ function ContactPage() {
             </label>
           </div>
           <label className="block">
-            <span className="text-sm font-medium">Interested division</span>
+            <span className="text-sm font-medium">Interested SBU</span>
             <select className="mt-1 w-full rounded-lg border border-input bg-background px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
-              <option>ICT &amp; Digital</option>
-              <option>Industrial Engineering</option>
-              <option>Healthcare</option>
-              <option>Printing &amp; Branding</option>
+              <option>ICT</option>
+              <option>Industrial Solutions</option>
+              <option>Healthcare Solutions</option>
+              <option>Commercial Printing</option>
               <option>Multiple / Not sure</option>
             </select>
           </label>

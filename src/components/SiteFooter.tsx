@@ -18,12 +18,12 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <div className="text-xs uppercase tracking-[0.18em] text-accent font-semibold mb-4">Solutions</div>
+          <div className="text-xs uppercase tracking-[0.18em] text-accent font-semibold mb-4">SBUs</div>
           <ul className="space-y-2 text-sm text-primary-foreground/85">
-            <li><Link to="/solutions/ict" className="hover:text-accent">ICT &amp; Digital</Link></li>
-            <li><Link to="/solutions/industrial" className="hover:text-accent">Industrial Engineering</Link></li>
+            <li><Link to="/solutions/ict" className="hover:text-accent">ICT</Link></li>
+            <li><Link to="/solutions/industrial" className="hover:text-accent">Industrial Solutions</Link></li>
             <li><Link to="/solutions/healthcare" className="hover:text-accent">Healthcare Solutions</Link></li>
-            <li><Link to="/solutions/printing" className="hover:text-accent">Printing &amp; Branding</Link></li>
+            <li><Link to="/solutions/printing" className="hover:text-accent">Commercial Printing</Link></li>
           </ul>
         </div>
 

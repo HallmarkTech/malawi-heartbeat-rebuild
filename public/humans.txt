@@ -5,11 +5,11 @@ Site:    https://hallmark.mw
 Contact: sales [at] hallmark.mw
 From:    Lilongwe, Malawi
 
-/* DIVISIONS */
-ICT & Digital            -- ict@hallmark.mw
-Industrial Engineering   -- industrial@hallmark.mw
-Healthcare Technology    -- healthcare@hallmark.mw
-Printing & Branding      -- printing@hallmark.mw
+/* STRATEGIC BUSINESS UNITS (SBUs) */
+ICT                    -- ict@hallmark.mw
+Industrial Solutions   -- industrial@hallmark.mw
+Healthcare Solutions   -- healthcare@hallmark.mw
+Commercial Printing    -- printing@hallmark.mw
 
 /* OFFICES */
 Lilongwe (HQ) · Blantyre · Mzuzu · Lusaka
