@@ -1,0 +1,1 @@
+import{j as e}from"./index-CxKtDeF8.js";const n=({error:t})=>e.jsxs("div",{className:"container-x py-32 text-center",children:[e.jsx("h1",{className:"font-display text-2xl font-bold",children:"Something went wrong"}),e.jsx("p",{className:"mt-2 text-muted-foreground",children:t.message})]});export{n as errorComponent};

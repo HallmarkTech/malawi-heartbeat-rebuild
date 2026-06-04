@@ -1,1 +1,0 @@
-import{j as t,L as n}from"./index-35OkgcCs.js";const s=()=>t.jsxs("div",{className:"container-x py-32 text-center",children:[t.jsx("h1",{className:"font-display text-4xl font-bold",children:"Post not found"}),t.jsx(n,{to:"/blog",className:"btn-primary mt-6 inline-flex",children:"Back to insights"})]});export{s as notFoundComponent};
