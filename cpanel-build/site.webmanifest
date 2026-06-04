@@ -1,0 +1,12 @@
+{
+  "name": "Hallmark Limited",
+  "short_name": "Hallmark",
+  "description": "African ICT, Industrial, Healthcare and Printing solutions — Malawi & Zambia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf5",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}

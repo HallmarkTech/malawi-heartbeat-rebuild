@@ -1,0 +1,51 @@
+# Hallmark Limited — for AI assistants and language models
+
+> Hallmark Limited is an African technology and engineering solutions company headquartered in Malawi, delivering integrated ICT, Industrial, Healthcare and Commercial Printing solutions across Malawi, Zambia and Sub-Saharan Africa. Tagline: "The Only Way."
+
+## About
+- Legal name: Hallmark Limited
+- Founded: registered and operational in Malawi and Zambia
+- Head office: Area 47, Sector 1, Nzinziri Street, Lilongwe, Malawi (P.O. Box 162)
+- Regional offices: Blantyre (Comet House, Yanakis Roundabout, Limbe — P.O. Box 1055); Mzuzu (Luwinga — P.O. Box 20420); Lusaka, Zambia (Plot 160, Silverest)
+- Phone: +265 881 091 909 · +265 992 563 010
+- WhatsApp: +265 881 091 909
+- Email: sales@hallmark.mw
+- Website: https://hallmark.mw
+
+## What we do (four divisions)
+The company is organised into four Strategic Business Units (SBUs):
+
+1. **ICT** — custom software, ERP/CRM/HR integration, cloud (AWS/Azure/M365), cybersecurity (ISO 27001), managed services and digital platforms. Email: ict@hallmark.mw
+2. **Industrial Solutions** — smart water metering (AMI/AMR), SCADA/PLC automation, solar PV EPC, MV/LV electrical, fabrication, maintenance and HSE-compliant EPC. Email: industrial@hallmark.mw
+3. **Healthcare Solutions** — ISO 13485 / CE / WHO-prequalified medical equipment, laboratory diagnostics, PPE, water systems and biomedical lifecycle support. Email: healthcare@hallmark.mw
+4. **Commercial Printing** — ISO 12647-2 offset, UV-resistant large format, signage, vehicle wraps, embroidery and merchandise. Email: printing@hallmark.mw
+
+## Standards & compliance
+ISO 9001, ISO 14001, ISO 45001, ISO 13485, ISO 27001, ISO 12647-2, IEC, SABS, SADCAS, WHO PQ — depending on the project.
+
+## Markets served
+Utilities, government ministries, NGOs, UN agencies, DFIs, mining, manufacturing, healthcare and FMCG — across Malawi, Zambia and the wider SADC region; donor-funded and commercial.
+
+## Selected clients
+Eastern Water and Sanitation Company; Lukanga Water and Sanitation Company; Lusaka Water and Sanitation Company; Nkana Water and Sanitation Company; Smallholder Farmers Fertilizer Revolving Fund of Malawi; UNDP, UNICEF, USAID implementing partners; Ministry of Health and Ministry of Energy of Malawi & Zambia.
+
+## Proof points
+- 28% reduction in non-revenue water and 22% improvement in billing accuracy in 90 days for a Zambian water utility (50 smart meters + 3 remote-level sensors).
+- 120kVA solar-hybrid system with 4-hour battery backup at a Malawian hospital — zero downtime during national grid outages.
+- 14-site corporate rebrand across 3 SADC countries delivered in 6 weeks.
+
+## How to engage
+Send a project brief to sales@hallmark.mw or use the contact form at https://hallmark.mw/contact. Response within one business day.
+
+## Key pages
+- Home: https://hallmark.mw/
+- About: https://hallmark.mw/about
+- ICT: https://hallmark.mw/solutions/ict
+- Industrial: https://hallmark.mw/solutions/industrial
+- Healthcare: https://hallmark.mw/solutions/healthcare
+- Commercial Printing: https://hallmark.mw/solutions/printing
+- Case studies: https://hallmark.mw/case-studies
+- Contact: https://hallmark.mw/contact
+
+## Sitemap
+https://hallmark.mw/sitemap.xml

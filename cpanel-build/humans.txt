@@ -1,0 +1,15 @@
+/* TEAM */
+Company: Hallmark Limited
+Tagline: The Only Way
+Site:    https://hallmark.mw
+Contact: sales [at] hallmark.mw
+From:    Lilongwe, Malawi
+
+/* STRATEGIC BUSINESS UNITS (SBUs) */
+ICT                    -- ict@hallmark.mw
+Industrial Solutions   -- industrial@hallmark.mw
+Healthcare Solutions   -- healthcare@hallmark.mw
+Commercial Printing    -- printing@hallmark.mw
+
+/* OFFICES */
+Lilongwe (HQ) · Blantyre · Mzuzu · Lusaka
