@@ -67,24 +67,23 @@ const clients: LogoItem[] = [
 ];
 
 const partners: LogoItem[] = [
-  { mark: "Hadron", name: "Hadron Group", markClassName: "font-semibold text-[#0f766e]" },
+  { logo: "/logos/partners/hadron-group.png", name: "Hadron Group" },
   {
-    mark: "HME",
+    logo: "/logos/partners/hospital-medical-equipment.png",
     name: "Hospital Medical Equipment",
-    markClassName: "font-black tracking-[0.18em] text-[#1d4ed8]",
   },
-  { mark: "Heidelberg", name: "Heidelberg", markClassName: "font-semibold text-[#0f5132]" },
-  { mark: "Midcomp", name: "Midcomp", markClassName: "font-bold text-[#b42318]" },
-  { mark: "Lasec", name: "Lasec Group", markClassName: "font-semibold text-[#1d4ed8]" },
-  { mark: "Lesira-Teq", name: "Lesira-Teq", markClassName: "font-bold text-[#0f766e]" },
-  { mark: "Microsoft", name: "Microsoft", markClassName: "font-semibold text-[#5e5e5e]" },
-  { logo: "/logos/partners/dell.svg", name: "Dell" },
-  { logo: "/logos/partners/hp.svg", name: "HP" },
-  { logo: "/logos/partners/lenovo.svg", name: "Lenovo" },
-  { mark: "Oracle", name: "Oracle", markClassName: "font-bold tracking-wide text-[#c74634]" },
-  { mark: "IBM", name: "IBM", markClassName: "font-black tracking-[0.2em] text-[#1f70c1]" },
-  { logo: "/logos/partners/huawei.svg", name: "Huawei" },
-  { mark: "Konica Minolta", name: "Konica Minolta", markClassName: "font-semibold text-[#0057a7]" },
+  { logo: "/logos/partners/heidelberg.png", name: "Heidelberg" },
+  { logo: "/logos/partners/midcomp.png", name: "Midcomp" },
+  { logo: "/logos/partners/lasec-group.png", name: "Lasec Group" },
+  { logo: "/logos/partners/lesira-teq.png", name: "Lesira-Teq" },
+  { logo: "/logos/partners/microsoft.png", name: "Microsoft" },
+  { logo: "/logos/partners/dell.png", name: "Dell" },
+  { logo: "/logos/partners/hp.png", name: "HP" },
+  { logo: "/logos/partners/lenovo.png", name: "Lenovo" },
+  { logo: "/logos/partners/oracle.png", name: "Oracle" },
+  { logo: "/logos/partners/ibm.png", name: "IBM" },
+  { logo: "/logos/partners/huawei.png", name: "Huawei" },
+  { logo: "/logos/partners/konica-minolta.png", name: "Konica Minolta" },
 ];
 
 function LogoTile({ item, isDark = false }: { item: LogoItem; isDark?: boolean }) {
